@@ -35,3 +35,7 @@ WebAssembly is a low-level, assembly-like language with a compact binary format.
 
 - <h5>WebAssembly is part of the open web platform : </h5>
    WebAssembly is designed to maintain the versionless, feature-tested, and backwards-compatible nature of the web. WebAssembly modules will be able to call into and out of the JavaScript context and access browser functionality through the same Web APIs accessible from JavaScript. WebAssembly also supports non-web embeddings.
+
+
+<h2>Prerequisites of WebAssembly</h2>
+We Should have basic understaing of of JavaScript and atleast one of the high level language like C, C++ or Rust.
