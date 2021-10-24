@@ -73,3 +73,51 @@ In contrast, statically-typed languages such as C/C++ require to declare the typ
 - We write code with its types, usually in a statically typed-language such as C/C++, or Rust.
 - Then we generate a pre-compiled WASM module.
 - Then we can run this code straight by the engine compiler, skipping the parsing and the transformation to Intermediate Representation.
+
+### Installation
+
+To compile statically-typed language such as C/C++ we need to install Emscripten SDK which is a Low level virtual machine.
+
+The steps to install Emscripten are as such:
+
+- Clone the repository using command
+   ```
+   git clone https://github.com/emscripten-core/emsdk.git
+   ```
+- Navigate to the `emsdk` directory
+  ```
+  cd emsdk
+  ```
+- make sure clones repository is updated with remote one:
+  ```
+  git pull
+  ```
+- Install the latest version of Emscripten
+  ```
+  ./emsdk install latest
+  ```
+- Activate the latest version
+  ```
+  ./emsdk activate latest
+  ```
+- Set the various environmental variables
+  ```
+  source ./emsdk_env.sh
+  ```
+
+- Check Installation
+  ```
+  emcc --version
+  ```
+
+- To Compile C/C++ programs
+  ```
+  emcc hello.c -s WASM=1 -o hello.html    
+  em++ hello.cpp -s WASM=1 -o hello.html    
+  ```
+
+- For only  wasm file
+  ```
+  emcc hello.c -s STANDALONE_WASM
+  em++ hello.cpp -s STANDALONE_WASM
+  ```
