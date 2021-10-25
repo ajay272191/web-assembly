@@ -80,43 +80,43 @@ To compile statically-typed language such as C/C++ we need to install Emscripten
 
 The steps to install Emscripten are as such:
 
-- Clone the repository using command
+- Clone the repository using command </br>
    ```
    git clone https://github.com/emscripten-core/emsdk.git
    ```
-- Navigate to the `emsdk` directory
+- Navigate to the `emsdk` directory </br>
   ```
   cd emsdk
   ```
-- make sure clones repository is updated with remote one:
+- make sure clones repository is updated with remote one: </br>
   ```
   git pull
   ```
-- Install the latest version of Emscripten
+- Install the latest version of Emscripten </br>
   ```
   ./emsdk install latest
   ```
-- Activate the latest version
+- Activate the latest version </br>
   ```
   ./emsdk activate latest
   ```
-- Set the various environmental variables
+- Set the various environmental variables </br>
   ```
   source ./emsdk_env.sh
   ```
 
-- Check Installation
+- Check Installation </br>
   ```
   emcc --version
   ```
 
-- To Compile C/C++ programs
+- To Compile C/C++ programs </br>
   ```
   emcc hello.c -s WASM=1 -o hello.html    
   em++ hello.cpp -s WASM=1 -o hello.html    
   ```
 
-- For only  wasm file
+- For only  wasm file </br>
   ```
   emcc hello.c -s STANDALONE_WASM
   em++ hello.cpp -s STANDALONE_WASM
@@ -134,4 +134,6 @@ Start a server using node server
 
 
 ## Examples
-- [Printing hello using default template, generated while compiling with Emscripten (emcc)](./../helloAjay)
+- [Printing hello using default template, generated while compiling with Emscripten (emcc)](./helloAjay)
+
+- [Calling C function from JavaScript](./callingCprogramsFunction)
