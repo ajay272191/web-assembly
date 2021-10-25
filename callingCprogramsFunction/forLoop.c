@@ -1,12 +1,16 @@
 #include<stdio.h>
+#include<string.h>
 
 int main(){
-  printf("Welcome to Amazing world of WASM\n" );
+  printf("\n\n So Welcome to Amazing world of WASM\n" );
 }
 
 
-char * greetX(){
-  return "Hello  There.";
+char * greetX(char * name){
+  char * greetingMessage = "hello ";
+  strcat(greetingMessage, name);
+
+  return greetingMessage;
 }
 
 int wCount(int number){
