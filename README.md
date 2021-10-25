@@ -121,3 +121,17 @@ The steps to install Emscripten are as such:
   emcc hello.c -s STANDALONE_WASM
   em++ hello.cpp -s STANDALONE_WASM
   ```
+## Serving compiled code
+There are many way to serve custom or default generated `html` page using Emscripten
+- emrun:  </br>
+`emrun` is a command line tool inbuild in Emscripten used to launch Emscripten-generated HTML page in a web browser from the command line.
+- Using Node server </br>
+Start a server using node server
+- Starting own server </br>
+  - Starting an Apache server
+  - Starting a simple server via command line utility provided in  `Python` i.e. `python -m http.server`
+  - etc.
+
+
+## Examples
+- [Printing hello using default template, generated while compiling with Emscripten (emcc)](./../helloAjay)
