@@ -1,9 +1,13 @@
 #include<stdio.h>
 
 int main(){
-  printf("hello Ajay\n" );
+  printf("Welcome to Amazing world of WASM\n" );
 }
 
+
+char * greetX(){
+  return "Hello  There.";
+}
 
 int wCount(int number){
   printf("Here in wcount fuction\n" );

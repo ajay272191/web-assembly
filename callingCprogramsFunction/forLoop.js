@@ -1939,6 +1939,9 @@ var asm = createWasm();
 var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__wasm_call_ctors");
 
 /** @type {function(...*):?} */
+var _greetX = Module["_greetX"] = createExportWrapper("greetX");
+
+/** @type {function(...*):?} */
 var _wCount = Module["_wCount"] = createExportWrapper("wCount");
 
 /** @type {function(...*):?} */

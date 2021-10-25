@@ -13,10 +13,13 @@
     <script>
 
       Module['onRuntimeInitialized'] = () =>{
-        const number = 1000000000;
+        const number = 10000000;
         startTime = performance.now();
         _wCount(number)
-        console.log(number, ": Time:", Math.round(performance.now() - startTime));
+        console.log("Counts ", number, " in Time:", Math.round(performance.now() - startTime)/1000, " seconds");
+        console.log("Memory location of string/ char pointer: ", _greetX());
+        console.log("Content at Memory location ",  _greetX(), " :" , ccall('greetX','string'));
+
       }
 
     </script>
